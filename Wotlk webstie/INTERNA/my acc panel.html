@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Account Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: #1b1b1b;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .navbar a {
+      color: #ccc;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      color: #fff;
+      border-bottom: 2px solid #e0c870;
+    }
+
+    .account-panel {
+      background-color: #1e1e1e;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 30px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+
+    .account-panel h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #e0c870;
+    }
+
+    .account-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .info-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info-label {
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    .info-value {
+      font-size: 15px;
+      color: #fff;
+    }
+
+    .rank {
+      font-weight: bold;
+    }
+
+    .premium { color: #ffd700; }
+    .envoy { color: #4aa3ff; }
+    .patriot { color: #c276ff; }
+
+    .bottom-note {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #888;
+      text-align: center;
+    }
+
+    .bottom-note a {
+      color: #4aa3ff;
+      text-decoration: none;
+    }
+
+    .bottom-note a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sub-navbar -->
+  <div class="navbar">
+    <a href="#" class="active">My Account</a>
+    <a href="#">Donate</a>
+    <a href="#">Store</a>
+    <a href="#">Services</a>
+    <a href="#">Security</a>
+    <a href="#">Trade</a>
+  </div>
+
+  <!-- Account Panel -->
+  <div class="account-panel">
+    <h2>Welcome, Gatito09</h2>
+    <div class="account-info">
+
+      <div class="info-group">
+        <span class="info-label">Email</span>
+        <span class="info-value">wwarcraft79@gmail.com</span>
+      </div>
+
+      <div class="info-group">
+        <span class="info-label">Coins</span>
+        <span class="info-value">1</span>
+      </div>
+
+      <div class="info-group">
+        <span class="info-label">Points</span>
+        <span class="info-value">11.8</span>
+      </div>
+
+      <div class="info-group">
+        <span class="info-label">2FA</span>
+        <span class="info-value">Enabled</span>
+      </div>
+
+      <div class="info-group">
+        <span class="info-label">Donation Rank</span>
+        <span class="info-value rank premium">Premium</span>
+      </div>
+
+      <div class="info-group">
+        <span class="info-label">Activity Rank</span>
+        <span class="info-value rank envoy">Envoy</span>
+      </div>
+
+      <div class="info-group">
+        <span class="info-label">Community Rank</span>
+        <span class="info-value rank patriot">Patriot</span>
+      </div>
+
+      <div class="info-group">
+        <span class="info-label">Join Date</span>
+        <span class="info-value">June 29, 2020</span>
+      </div>
+
+      <div class="info-group">
+        <span class="info-label">Last Seen IP</span>
+        <span class="info-value">163.113.108.20</span>
+      </div>
+
+    </div>
+
+    <div class="bottom-note">
+      <a href="#">View full history</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WoW Private Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      background-color: #0e0e0e;
+      color: #d4af37;
+    }
+
+    header {
+      background: #1b1b1b;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 20px black;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      color: #d4af37;
+      margin: 0 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      background-image: url('https://wow.zamimg.com/uploads/screenshots/normal/866264.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .hero h1 {
+      position: relative;
+      font-size: 48px;
+      color: #fff;
+      text-shadow: 2px 2px 8px black;
+      z-index: 2;
+    }
+
+    .news-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+
+    .news-item {
+      border-bottom: 1px solid #333;
+      padding: 20px 0;
+    }
+
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    .news-item h3 {
+      margin-bottom: 10px;
+      color: #d4af37;
+    }
+
+    .news-item p {
+      color: #ccc;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #666;
+      background: #101010;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="Server Logo" />
+    <nav>
+      <a href="main.html">Create Account</a>
+      <a href="#">Download</a>
+      <a href="#">Forum</a>
+      <a href="#">Information</a>
+      <a href="#">Armory</a>
+      <a href="#">Log In</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Welcome to Azeroth Reborn</h1>
+  </div>
+
+  <section class="news-section">
+    <div class="news-item">
+      <h3>[April 18, 2025] Patch 1.0 Release</h3>
+      <p>Our realm is now live with full WotLK content. Join the fight against the Lich King and conquer Northrend!</p>
+    </div>
+    <div class="news-item">
+      <h3>[April 10, 2025] Beta Feedback Results</h3>
+      <p>Thanks to everyone who participated in the closed beta. Major fixes and class balance changes are live!</p>
+    </div>
+  </section>
+
+  <div class="footer">
+    © 2025 Azeroth Reborn | A HEMSWORK PROJECT.
+  </div>
+</body>
+</html>
